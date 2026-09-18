@@ -1,0 +1,45 @@
+{{ define "main" }}
+<section class="hero">
+  <h1>{{ site.Params.labAcronym }} <span class="hero-sub">{{ site.Params.labName }}</span></h1>
+  <p class="hero-tagline">{{ site.Params.tagline }}</p>
+</section>
+
+<section class="home-about">
+  {{ .Content }}
+</section>
+
+<section class="home-links">
+  <a class="card-link" href="{{ "/people/" | relURL }}">
+    <h3>People</h3>
+    <p>Meet the PI, students, and alumni.</p>
+  </a>
+  <a class="card-link" href="{{ "/research/" | relURL }}">
+    <h3>Research</h3>
+    <p>Control theory, learning, and formal methods for trustworthy autonomy.</p>
+  </a>
+  <a class="card-link" href="{{ "/publications/" | relURL }}">
+    <h3>Publications</h3>
+    <p>Recent papers from the lab.</p>
+  </a>
+  <a class="card-link" href="{{ "/news/" | relURL }}">
+    <h3>News</h3>
+    <p>Lab updates and announcements.</p>
+  </a>
+</section>
+
+{{ $news := where site.RegularPages "Section" "news" }}
+{{ $news = $news.ByDate.Reverse }}
+{{ if $news }}
+<section class="home-news">
+  <h2>Latest News</h2>
+  <ul class="news-list">
+    {{ range first 3 $news }}
+    <li>
+      <span class="news-date">{{ .Date.Format "Jan 2006" }}</span>
+      <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+    </li>
+    {{ end }}
+  </ul>
+</section>
+{{ end }}
+{{ end }}

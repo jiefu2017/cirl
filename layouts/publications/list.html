@@ -1,0 +1,28 @@
+{{ define "main" }}
+{{ $pubs := hugo.Data.publications }}
+{{ $years := slice }}
+{{ range $pubs }}{{ $years = $years | append .year }}{{ end }}
+{{ $years = $years | uniq }}
+<article class="publications-page">
+  <h1>{{ .Title }}</h1>
+  {{ .Content }}
+  <p class="pub-scholar">
+    Full list on <a href="{{ site.Params.googleScholar }}" target="_blank" rel="noopener">Google Scholar</a>.
+  </p>
+  {{ range $years }}
+  {{ $year := . }}
+  <section class="pub-year">
+    <h2>{{ $year }}</h2>
+    <ol class="pub-list">
+      {{ range where $pubs "year" $year }}
+      <li>
+        <span class="pub-title">{{ .title }}</span>
+        <span class="pub-authors">{{ .authors }}</span>
+        <span class="pub-venue">{{ .venue }}</span>
+      </li>
+      {{ end }}
+    </ol>
+  </section>
+  {{ end }}
+</article>
+{{ end }}

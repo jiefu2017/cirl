@@ -1,0 +1,16 @@
+<header class="site-header">
+  <div class="wrap header-inner">
+    <a class="brand" href="{{ "/" | relURL }}">
+      <span class="brand-acronym">{{ site.Params.labAcronym }}</span>
+      <span class="brand-name">{{ site.Params.labName }}</span>
+    </a>
+    <nav class="site-nav">
+      <button class="nav-toggle" aria-label="Toggle menu" onclick="document.querySelector('.site-nav ul').classList.toggle('open')">☰</button>
+      <ul>
+        {{ range site.Menus.main }}
+        <li><a href="{{ .URL | relURL }}"{{ if $.IsMenuCurrent "main" . }} class="active"{{ end }}>{{ .Name }}</a></li>
+        {{ end }}
+      </ul>
+    </nav>
+  </div>
+</header>

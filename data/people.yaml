@@ -1,0 +1,61 @@
+pi:
+  name: "Dr. Jie Fu"
+  title: "Associate Professor"
+  department: "Department of Electrical and Computer Engineering"
+  institution: "University of Florida"
+  email: "fujie@ufl.edu"
+  bio: >
+    Dr. Jie Fu received her M.Sc. in Electrical Engineering and Automation from
+    Beijing Institute of Technology (2009) and her Ph.D. in Mechanical Engineering
+    from the University of Delaware (2013). She completed postdoctoral work at the
+    University of Pennsylvania (2013-2015) and served as an Assistant Professor in
+    the Department of Robotics Engineering at Worcester Polytechnic Institute
+    (2016-2021) before joining the University of Florida in 2021. Her research
+    integrates control theory, machine learning, and formal methods to build
+    trustworthy autonomous systems.
+  links:
+    - label: "Faculty Page"
+      url: "https://faculty.eng.ufl.edu/fujie/"
+    - label: "Google Scholar"
+      url: "https://scholar.google.com/citations?user=B5sj3WEAAAAJ&hl=en"
+
+students:
+  - name: "Chongyang Shi"
+    role: "Ph.D. Student"
+    email: "c.shi@ufl.edu"
+    links:
+      - label: "Google Scholar"
+        url: "https://scholar.google.com/citations?user=Thbx0TkAAAAJ&hl=en"
+  - name: "Sumukha Udupa"
+    role: "Ph.D. Student"
+    email: "sudupa@ufl.edu"
+    links:
+      - label: "Google Scholar"
+        url: "https://scholar.google.com/citations?user=fAjzC5IAAAAJ&hl=en"
+  - name: "Shubham Kolhe"
+    role: "Ph.D. Student"
+    email: "shubham.kolhe@ufl.edu"
+  - name: "Xinyi Wei"
+    role: "Ph.D. Student"
+    email: "weixinyi@ufl.edu"
+  - name: "Ozlem Polat"
+    role: "Ph.D. Student"
+    email: "opolat@ufl.edu"
+
+postdocs:
+  - name: "Dr. Sontao Feng"
+    role: "Postdoctoral Researcher"
+
+alumni:
+  - name: "Dr. Lening Li"
+    note: "Senior Software Engineer, Symbotic"
+    email: "leningli@outlook.com"
+  - name: "Dr. Abhishek Kulkarni"
+    note: "Trustworthy AI Researcher, Vijil"
+    links:
+      - label: "Website"
+        url: "https://www.vijil.ai/"
+  - name: "Dr. Haoxiang Ma"
+    note: "AI Research Scientist, Meituan"
+  - name: "Dr. Xuan Liu"
+    note: "Postdoctoral Researcher, School of Aeronautics and Astronautics, Zhejiang University"

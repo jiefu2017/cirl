@@ -1,0 +1,81 @@
+# Add new entries at the top of their year. year is used to group entries on the Publications page.
+- year: 2026
+  title: "Reactive synthesis of sensor revealing strategies in hypergames on graphs"
+  authors: "S. Udupa, A. Hemida, C. A. Kamhoua, J. Fu"
+  venue: "Automatica"
+- year: 2026
+  title: "Cost-Aware Active Perception for k-step Predictive Safety"
+  authors: "S. Udupa, J. Fu"
+  venue: "IEEE Control Systems Letters"
+- year: 2026
+  title: "Active Inference through Incentive Design in Partially Observable Markov Decision Processes"
+  authors: "X. Wei, C. Shi, S. Han, A. Hemida, C. A. Kamhoua, J. Fu"
+  venue: "25th International Conference on Autonomous Agents and Multiagent Systems"
+- year: 2026
+  title: "Preference-based probabilistic planning with partially-ordered temporal goals"
+  authors: "H. Rahmani, A. N. Kulkarni, J. Fu"
+  venue: "Automatica"
+- year: 2026
+  title: "Information-Driven Active Perception for k-step Predictive Safety Monitoring"
+  authors: "S. Udupa, J. Fu"
+  venue: "arXiv preprint"
+- year: 2026
+  title: "C-IDS: Solving Contextual POMDP via Information-Directed Objective"
+  authors: "C. Shi, M. Dorothy, J. Fu"
+  venue: "arXiv preprint"
+- year: 2025
+  title: "Policy Gradient Methods for Information-Theoretic Opacity in Markov Decision Processes"
+  authors: "C. Shi, S. Udupa, M. R. Dorothy, S. Han, J. Fu"
+  venue: "arXiv preprint"
+- year: 2025
+  title: "IMAS: Joint Agent Selection and Information-Theoretic Coordinated Perception In Dec-POMDPs"
+  authors: "C. Shi, W. A. Suttle, M. Dorothy, J. Fu"
+  venue: "arXiv preprint"
+- year: 2025
+  title: "Proactive Defense Strategy Design in Probabilistic Attack Graphs"
+  authors: "H. Ma, S. Han, C. A. Kamhoua, J. Fu"
+  venue: "Foundations of Cyber Deception: Modeling, Analysis, Design, Human Factors"
+- year: 2025
+  title: "Coordinated Attack Planning in Probabilistic Attack Graphs within a Sensor-Allocated Network"
+  authors: "R. Mofouet, H. Ma, J. Fu, C. Kamhoua, G. Deugoue, A. Kouam"
+  venue: "International Conference on Network Games, Control, and Optimization"
+- year: 2025
+  title: "Defensive Deception against Subspace-Based AoA Localization under Jamming Attacks"
+  authors: "A. Hemida, J. Fu, C. Kamhoua, M. Ji"
+  venue: "IEEE MILCOM 2025"
+- year: 2025
+  title: "Robust reward design for Markov decision processes"
+  authors: "S. Wu, H. Ma, J. Fu, S. Han"
+  venue: "Journal of Artificial Intelligence Research"
+- year: 2025
+  title: "Thompson Sampling in Online RLHF with General Function Approximation"
+  authors: "S. Feng, J. Fu"
+  venue: "arXiv preprint"
+- year: 2025
+  title: "Automata Learning of Preferences over Temporal Logic Formulas from Pairwise Comparisons"
+  authors: "H. Rahmani, J. Fu"
+  venue: "arXiv preprint"
+- year: 2025
+  title: "Synthesis of Dynamic Masks for Information-Theoretic Opacity in Stochastic Systems"
+  authors: "S. Udupa, C. Shi, J. Fu"
+  venue: "ACM/IEEE 16th International Conference on Cyber-Physical Systems (ICCPS)"
+- year: 2025
+  title: "Planning Stealthy Backdoor Attacks in MDPs with Observation-Based Triggers"
+  authors: "X. Wei, S. Han, A. H. Hemida, C. A. Kamhoua, J. Fu"
+  venue: "arXiv preprint"
+- year: 2025
+  title: "Strategic Planning of Stealthy Backdoor Attacks in Markov Decision Processes"
+  authors: "X. Wei, S. Han, A. H. Hemida, C. A. Kamhoua, J. Fu"
+  venue: "arXiv preprint"
+- year: 2025
+  title: "Integrated Control and Active Perception in POMDPs for Temporal Logic Tasks and Information Acquisition"
+  authors: "C. Shi, M. R. Dorothy, J. Fu"
+  venue: "arXiv preprint"
+- year: 2025
+  title: "Learning Nash Equilibrium of Markov Potential Games with a Shared Constraint via Primal-Dual Optimization"
+  authors: "S. Feng, M. Dorothy, J. Fu"
+  venue: "AAAI Conference on Artificial Intelligence (AAAI)"
+- year: 2025
+  title: "Sequential decision making in stochastic games with incomplete preferences over temporal objectives"
+  authors: "A. N. Kulkarni, J. Fu, U. Topcu"
+  venue: "AAAI Conference on Artificial Intelligence (AAAI)"

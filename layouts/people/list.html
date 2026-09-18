@@ -1,0 +1,68 @@
+{{ define "main" }}
+{{ $people := hugo.Data.people }}
+<article class="people-page">
+  <h1>{{ .Title }}</h1>
+
+  <section class="people-group">
+    <h2>Principal Investigator</h2>
+    <div class="person person-pi">
+      <div class="person-body">
+        <h3>{{ $people.pi.name }}</h3>
+        <p class="person-role">{{ $people.pi.title }}, {{ $people.pi.department }}, {{ $people.pi.institution }}</p>
+        <p>{{ $people.pi.bio }}</p>
+        <p class="person-links">
+          <a href="mailto:{{ $people.pi.email }}">{{ $people.pi.email }}</a>
+          {{ range $people.pi.links }} · <a href="{{ .url }}" target="_blank" rel="noopener">{{ .label }}</a>{{ end }}
+        </p>
+      </div>
+    </div>
+  </section>
+
+  {{ if $people.students }}
+  <section class="people-group">
+    <h2>Graduate Students</h2>
+    <div class="people-grid">
+      {{ range $people.students }}
+      <div class="person">
+        <h3>{{ .name }}</h3>
+        <p class="person-role">{{ .role }}</p>
+        {{ if .email }}<p class="person-links"><a href="mailto:{{ .email }}">{{ .email }}</a></p>{{ end }}
+        {{ if .links }}<p class="person-links">{{ range $i, $l := .links }}{{ if $i }} · {{ end }}<a href="{{ $l.url }}" target="_blank" rel="noopener">{{ $l.label }}</a>{{ end }}</p>{{ end }}
+      </div>
+      {{ end }}
+    </div>
+  </section>
+  {{ end }}
+
+  {{ if $people.postdocs }}
+  <section class="people-group">
+    <h2>Postdoctoral Researchers</h2>
+    <div class="people-grid">
+      {{ range $people.postdocs }}
+      <div class="person">
+        <h3>{{ .name }}</h3>
+        <p class="person-role">{{ .role }}</p>
+        {{ if .email }}<p class="person-links"><a href="mailto:{{ .email }}">{{ .email }}</a></p>{{ end }}
+      </div>
+      {{ end }}
+    </div>
+  </section>
+  {{ end }}
+
+  {{ if $people.alumni }}
+  <section class="people-group">
+    <h2>Alumni</h2>
+    <div class="people-grid">
+      {{ range $people.alumni }}
+      <div class="person">
+        <h3>{{ .name }}</h3>
+        {{ if .note }}<p class="person-role">{{ .note }}</p>{{ end }}
+        {{ if .email }}<p class="person-links"><a href="mailto:{{ .email }}">{{ .email }}</a></p>{{ end }}
+        {{ if .links }}<p class="person-links">{{ range $i, $l := .links }}{{ if $i }} · {{ end }}<a href="{{ $l.url }}" target="_blank" rel="noopener">{{ $l.label }}</a>{{ end }}</p>{{ end }}
+      </div>
+      {{ end }}
+    </div>
+  </section>
+  {{ end }}
+</article>
+{{ end }}

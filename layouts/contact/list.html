@@ -1,0 +1,22 @@
+{{ define "main" }}
+<article class="contact-page">
+  <h1>{{ .Title }}</h1>
+  {{ .Content }}
+  <dl class="contact-details">
+    <dt>Email</dt>
+    <dd><a href="mailto:{{ site.Params.email }}">{{ site.Params.email }}</a></dd>
+    <dt>Phone</dt>
+    <dd>{{ site.Params.phone }}</dd>
+    <dt>Office</dt>
+    <dd>{{ site.Params.office }}</dd>
+    <dt>Lab</dt>
+    <dd>{{ site.Params.labRoom }}</dd>
+    <dt>Mailing Address</dt>
+    <dd>{{ site.Params.address }}</dd>
+  </dl>
+  <p>
+    Prospective students: please email {{ site.Params.piName }} directly with your CV
+    and a brief note about your research interests.
+  </p>
+</article>
+{{ end }}

@@ -1,0 +1,54 @@
+baseURL = "https://jiefu2017.github.io/cirl/"
+locale = "en-us"
+title = "CIRL — Control and Intelligent Robotics Lab"
+theme = ""
+
+[pagination]
+  pagerSize = 10
+
+[params]
+  labName = "Control and Intelligent Robotics Lab"
+  labAcronym = "CIRL"
+  tagline = "Trustworthy autonomy through control theory, learning, and formal methods"
+  piName = "Dr. Jie Fu"
+  piTitle = "Associate Professor, Department of Electrical and Computer Engineering"
+  institution = "University of Florida"
+  email = "fujie@ufl.edu"
+  phone = "352-392-2642"
+  office = "Larsen 336"
+  labRoom = "Larsen 320"
+  address = "5000 Malachowsky Hall, 1889 Museum Road, P.O. Box 116200, Gainesville, FL 32611"
+  googleScholar = "https://scholar.google.com/citations?user=B5sj3WEAAAAJ&hl=en"
+  facultyPage = "https://faculty.eng.ufl.edu/fujie/"
+  github = "https://github.com/jiefu2017"
+
+[menu]
+  [[menu.main]]
+    name = "Home"
+    url = "/"
+    weight = 1
+  [[menu.main]]
+    name = "People"
+    url = "/people/"
+    weight = 2
+  [[menu.main]]
+    name = "Research"
+    url = "/research/"
+    weight = 3
+  [[menu.main]]
+    name = "Publications"
+    url = "/publications/"
+    weight = 4
+  [[menu.main]]
+    name = "News"
+    url = "/news/"
+    weight = 5
+  [[menu.main]]
+    name = "Contact"
+    url = "/contact/"
+    weight = 6
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
