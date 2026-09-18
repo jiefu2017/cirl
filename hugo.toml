@@ -1,7 +1,6 @@
 baseURL = "https://jiefu2017.github.io/cirl/"
 locale = "en-us"
 title = "CIRL — Control and Intelligent Robotics Lab"
-theme = ""
 
 [pagination]
   pagerSize = 10
