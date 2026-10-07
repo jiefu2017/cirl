@@ -11,6 +11,8 @@
   --color-surface: #f5f7fc;
   --max-width: 960px;
   --font-sans: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+  --font-serif: "Source Serif 4", Georgia, "Times New Roman", serif;
+  --font-nav: "Inter", var(--font-sans);
 }
 
 * { box-sizing: border-box; }
@@ -35,7 +37,8 @@ body {
 a { color: var(--color-accent); text-decoration: none; }
 a:hover { text-decoration: underline; }
 
-h1, h2, h3 { line-height: 1.25; font-weight: 650; letter-spacing: -0.01em; }
+h1, h2, h3 { font-family: var(--font-serif); line-height: 1.25; font-weight: 600; }
+h1 { font-weight: 700; }
 h1 { font-size: 2rem; margin: 0 0 0.6em; }
 h2 { font-size: 1.4rem; margin: 1.8em 0 0.6em; }
 h3 { font-size: 1.1rem; margin: 0 0 0.3em; }
@@ -64,14 +67,20 @@ p { margin: 0 0 1em; }
 }
 .brand:hover { text-decoration: none; }
 .brand-acronym {
-  font-weight: 800;
-  font-size: 1.25rem;
+  font-family: var(--font-serif);
+  font-weight: 700;
+  font-size: 1.55rem;
   color: #ffffff;
-  letter-spacing: 0.03em;
+  letter-spacing: 0.06em;
 }
 .brand-name {
-  font-size: 0.85rem;
+  font-family: var(--font-serif);
+  font-style: italic;
+  font-weight: 400;
+  font-size: 0.98rem;
   color: rgba(255,255,255,0.85);
+  padding-left: 12px;
+  border-left: 1px solid rgba(255,255,255,0.35);
   display: none;
 }
 @media (min-width: 640px) {
@@ -91,7 +100,11 @@ p { margin: 0 0 1em; }
   padding: 7px 14px;
   border-radius: 999px;
   color: #ffffff;
-  font-size: 0.95rem;
+  font-family: var(--font-nav);
+  font-weight: 500;
+  font-size: 0.78rem;
+  text-transform: uppercase;
+  letter-spacing: 0.09em;
   transition: background-color 0.25s ease;
 }
 /* Orange bar that grows from the center on hover / marks the current page. */
