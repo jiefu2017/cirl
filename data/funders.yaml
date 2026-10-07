@@ -1,0 +1,15 @@
+# Research sponsors shown in the site footer, in display order.
+# Agency logos are not used: NSF requires prior approval for webpages showing its
+# logo, and DARPA/DoD logos require a written trademark license.
+- acronym: "NSF"
+  name: "National Science Foundation"
+  url: "https://www.nsf.gov/"
+- acronym: "ARL"
+  name: "U.S. Army Research Laboratory"
+  url: "https://arl.devcom.army.mil/"
+- acronym: "DARPA"
+  name: "Defense Advanced Research Projects Agency"
+  url: "https://www.darpa.mil/"
+- acronym: "AFOSR"
+  name: "Air Force Office of Scientific Research"
+  url: "https://www.afrl.af.mil/AFOSR/"

@@ -8,7 +8,8 @@ title = "CIRL — Control and Intelligent Robotics Lab"
 [params]
   labName = "Control and Intelligent Robotics Lab"
   labAcronym = "CIRL"
-  tagline = "Trustworthy autonomy through control theory, learning, and formal methods"
+  # Used as the meta description (search results, link previews).
+  tagline = "CIRL develops autonomous robots and multi-agent systems that learn efficiently, act safely, and align with human preferences, combining control theory, formal methods, game theory, and machine learning."
   piName = "Dr. Jie Fu"
   piTitle = "Associate Professor, Department of Electrical and Computer Engineering"
   institution = "University of Florida"

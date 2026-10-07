@@ -1,21 +1,34 @@
 {{ define "main" }}
 <section class="hero">
   <h1>{{ site.Params.labAcronym }} <span class="hero-sub">{{ site.Params.labName }}</span></h1>
-  <p class="hero-tagline">{{ site.Params.tagline }}</p>
+  <div class="hero-statement">{{ .Content }}</div>
+  <p class="hero-pi">Directed by <strong>{{ site.Params.piName }}</strong> · {{ site.Params.piTitle }}, {{ site.Params.institution }}</p>
 </section>
 
-<section class="home-about">
-  {{ .Content }}
-</section>
-
-{{ with site.GetPage "/research" }}
-<section class="home-links">
-  {{ range .Pages.ByWeight }}
-  <a class="card-link" href="{{ .RelPermalink }}">
-    <h3>{{ .Title }}</h3>
-    <p>{{ .Params.summary }}</p>
-  </a>
-  {{ end }}
+{{ $researchURL := (site.GetPage "/research").RelPermalink }}
+{{ with hugo.Data.themes }}
+<section class="home-research">
+  <h2>Current Research</h2>
+  <div class="theme-grid">
+    {{ range . }}
+    {{ $t := . }}
+    <a class="theme-card" href="{{ $researchURL }}">
+      {{ with resources.Get $t.image }}
+      {{ $img := . }}
+      {{ if gt .Width 800 }}{{ $img = .Resize "800x webp" }}{{ end }}
+      <div class="theme-figure">
+        <img src="{{ $img.RelPermalink }}" width="{{ $img.Width }}" height="{{ $img.Height }}" alt="{{ $t.alt }}" loading="lazy">
+      </div>
+      {{ end }}
+      <div class="theme-body">
+        <p class="theme-number">{{ $t.number }}</p>
+        <h3>{{ $t.title }}</h3>
+        <p class="theme-question">{{ $t.question }}</p>
+        <p class="theme-methods">{{ $t.methods }}</p>
+      </div>
+    </a>
+    {{ end }}
+  </div>
 </section>
 {{ end }}
 
@@ -35,5 +48,21 @@
   </ul>
 </section>
 {{ end }}
+{{ end }}
+
+{{ with hugo.Data.funders }}
+<section class="sponsors">
+  <h2>Research Sponsors</h2>
+  <ul class="sponsors-list">
+    {{ range . }}
+    <li>
+      <a href="{{ .url }}" target="_blank" rel="noopener">
+        <span class="sponsor-acronym">{{ .acronym }}</span>
+        <span class="sponsor-name">{{ .name }}</span>
+      </a>
+    </li>
+    {{ end }}
+  </ul>
+</section>
 {{ end }}
 {{ end }}
