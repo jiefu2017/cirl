@@ -23,23 +23,23 @@ title = "CIRL — Control and Intelligent Robotics Lab"
 [menu]
   [[menu.main]]
     name = "Home"
-    url = "/"
+    pageRef = "/"
     weight = 1
   [[menu.main]]
     name = "Research Projects"
-    url = "/research/"
+    pageRef = "/research"
     weight = 2
   [[menu.main]]
     name = "Publications"
-    url = "/publications/"
+    pageRef = "/publications"
     weight = 3
   [[menu.main]]
     name = "People"
-    url = "/people/"
+    pageRef = "/people"
     weight = 4
   [[menu.main]]
     name = "Join Us"
-    url = "/join/"
+    pageRef = "/join"
     weight = 5
 
 [markup]
