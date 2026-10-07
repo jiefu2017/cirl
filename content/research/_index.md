@@ -1,5 +1,5 @@
 ---
-title: "Research"
+title: "Research Projects"
 ---
 
 Our group's research integrates three theoretical pillars to build robust,

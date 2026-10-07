@@ -8,38 +8,32 @@
   {{ .Content }}
 </section>
 
+{{ with site.GetPage "/research" }}
 <section class="home-links">
-  <a class="card-link" href="{{ "/people/" | relURL }}">
-    <h3>People</h3>
-    <p>Meet the PI, students, and alumni.</p>
+  {{ range .Pages.ByWeight }}
+  <a class="card-link" href="{{ .RelPermalink }}">
+    <h3>{{ .Title }}</h3>
+    <p>{{ .Params.summary }}</p>
   </a>
-  <a class="card-link" href="{{ "/research/" | relURL }}">
-    <h3>Research</h3>
-    <p>Control theory, learning, and formal methods for trustworthy autonomy.</p>
-  </a>
-  <a class="card-link" href="{{ "/publications/" | relURL }}">
-    <h3>Publications</h3>
-    <p>Recent papers from the lab.</p>
-  </a>
-  <a class="card-link" href="{{ "/news/" | relURL }}">
-    <h3>News</h3>
-    <p>Lab updates and announcements.</p>
-  </a>
+  {{ end }}
 </section>
+{{ end }}
 
-{{ $news := where site.RegularPages "Section" "news" }}
-{{ $news = $news.ByDate.Reverse }}
+{{/* News has no pages of its own; items are rendered in full here. */}}
+{{ with site.GetPage "/news" }}
+{{ $news := .Pages.ByDate.Reverse }}
 {{ if $news }}
 <section class="home-news">
   <h2>Latest News</h2>
   <ul class="news-list">
-    {{ range first 3 $news }}
+    {{ range first 4 $news }}
     <li>
       <span class="news-date">{{ .Date.Format "Jan 2006" }}</span>
-      <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+      <div class="news-body">{{ .Content }}</div>
     </li>
     {{ end }}
   </ul>
 </section>
+{{ end }}
 {{ end }}
 {{ end }}

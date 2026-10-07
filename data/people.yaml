@@ -41,6 +41,12 @@ students:
   - name: "Ozlem Polat"
     role: "Ph.D. Student"
     email: "opolat@ufl.edu"
+  - name: "Amirhossein Karimi"
+    role: "Ph.D. Student"
+    email: "am.karimi@ufl.edu"
+    links:
+      - label: "Website"
+        url: "https://amir-ka.github.io/"
 
 postdocs:
   - name: "Dr. Sontao Feng"

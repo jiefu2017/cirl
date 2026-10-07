@@ -13,10 +13,9 @@ title = "CIRL — Control and Intelligent Robotics Lab"
   piTitle = "Associate Professor, Department of Electrical and Computer Engineering"
   institution = "University of Florida"
   email = "fujie@ufl.edu"
-  phone = "352-392-2642"
   office = "Larsen 336"
   labRoom = "Larsen 320"
-  address = "5000 Malachowsky Hall, 1889 Museum Road, P.O. Box 116200, Gainesville, FL 32611"
+  address = "Larsen Hall, P.O. Box 116200, Gainesville, FL 32611"
   googleScholar = "https://scholar.google.com/citations?user=B5sj3WEAAAAJ&hl=en"
   facultyPage = "https://faculty.eng.ufl.edu/fujie/"
   github = "https://github.com/jiefu2017"
@@ -27,25 +26,21 @@ title = "CIRL — Control and Intelligent Robotics Lab"
     url = "/"
     weight = 1
   [[menu.main]]
-    name = "People"
-    url = "/people/"
-    weight = 2
-  [[menu.main]]
-    name = "Research"
+    name = "Research Projects"
     url = "/research/"
-    weight = 3
+    weight = 2
   [[menu.main]]
     name = "Publications"
     url = "/publications/"
+    weight = 3
+  [[menu.main]]
+    name = "People"
+    url = "/people/"
     weight = 4
   [[menu.main]]
-    name = "News"
-    url = "/news/"
+    name = "Join Us"
+    url = "/join/"
     weight = 5
-  [[menu.main]]
-    name = "Contact"
-    url = "/contact/"
-    weight = 6
 
 [markup]
   [markup.goldmark]

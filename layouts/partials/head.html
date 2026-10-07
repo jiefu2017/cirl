@@ -3,4 +3,5 @@
 <title>{{ if .IsHome }}{{ site.Title }}{{ else }}{{ .Title }} · {{ site.Params.labAcronym }}{{ end }}</title>
 <meta name="description" content="{{ site.Params.tagline }}">
 <link rel="icon" href="{{ "favicon.svg" | relURL }}">
-<link rel="stylesheet" href="{{ "css/main.css" | relURL }}">
+{{ $css := resources.Get "css/main.css" | minify | fingerprint }}
+<link rel="stylesheet" href="{{ $css.RelPermalink }}" integrity="{{ $css.Data.Integrity }}">
